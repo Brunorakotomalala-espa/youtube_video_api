@@ -23,7 +23,7 @@ def search_youtube():
         'q': query,
         'key': YOUTUBE_API_KEY,
         'type': 'video',
-        'maxResults': 1  # Vous pouvez ajuster ce nombre
+        'maxResults': 10  # Vous pouvez ajuster ce nombre
     }
 
     response = requests.get(YOUTUBE_API_URL, params=params)
